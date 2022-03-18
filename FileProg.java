@@ -23,34 +23,30 @@ public class FileProg {
                 case 1:
                     System.out.println("Enter the file name: ");
                     String fileName = scan.next();
-
+                    
                     System.out.println("Enter the file size: ");
                     int fileSize = scan.nextInt();
-
+                    
                     System.out.println("Enter the file range: ");
                     int fileRange = scan.nextInt();
-
+                    
                     fileUtilities.createFile(fileName, fileSize, fileRange);
-
                     break;
                 case 2:
                     System.out.println("Enter the file name: ");
                     fileName = scan.next();  
+                    
                     fileUtilities.sortFile(fileName);
                     break;
                 case 3:
                     System.out.println("Enter the file name: ");
                     fileName = scan.next();
-
                     System.out.println("Average is: " + fileUtilities.calculateAverage(fileName));
-
                     break;
                 case 4:
                     System.out.println("Enter the file name: ");
                     fileName = scan.next();
-
                     System.out.println("Median is: " + fileUtilities.calculateMedian(fileName));
-
                     break;
                 case 5:                    
                     System.out.println("Enter the file name: ");
@@ -64,7 +60,7 @@ public class FileProg {
                     break;
                 case 7:
                     loop = false;
-                    System.out.println("You have Exited.");
+                    System.out.println("You ended the program.");
                     break;
                 default:
                     System.out.println("Invalid choice.");
